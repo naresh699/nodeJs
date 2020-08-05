@@ -1,0 +1,32 @@
+extends ../layouts/index
+
+block slider
+    .slider
+        h1 Travel with Naresh NEgi
+        em Adventure start here
+
+block content
+    main.container.mt-5
+        h1.text-center.mb-5 About Us
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae scelerisque tortor. Quisque congue lacinia velit, ut hendrerit augue lobortis quis. Vestibulum mattis blandit nibh vitae viverra. Fusce auctor vel turpis vel congue.
+                p Nunc at vehicula ante. Praesent ultrices, velit ac lacinia tincidunt, ante massa molestie mi, sodales aliquam tortor ligula finibus augue. Maecenas vitae consequat orci. Duis tristique velit et euismod sagittis. Curabitur lacinia ut urna ut viverra. Nullam sed erat a velit sollicitudin viverra.
+            .col-md-5
+                img(src="./img/about_home.jpg", alt="" class="img-fluid")
+    .container
+        h1.text-center.mb-5 Upcoming Travels
+        include ../layouts/partials/travels
+    .discount
+        .container
+            .row
+                .col-md-6
+                    .content
+                        h3 5% off
+                        p.title Travel to canada
+                        p.date 20 Aug 2020 to 15 Dec 2020
+                        p.price $2,500
+
+    .container
+        h1.text-center.mb-5.mt-5 Testimonial
+        include ../layouts/partials/testimonials
